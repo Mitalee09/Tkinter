@@ -2,7 +2,7 @@ from tkinter import *
 
 root = Tk()
 root.title("Calculator")
-e = Entry(root, width = 35, borderwidth = 5)
+e = Entry(root, width = 40, borderwidth = 8)
 e.grid(row = 0, column = 0, columnspan = 3, padx = 10, pady = 10)
 
 def button_click(number):
@@ -97,26 +97,26 @@ def button_power3():
 
 #Define buttons
 
-button1 = Button(root,text = "1", padx = 40, pady = 20, command = lambda: button_click(1))
-button2 = Button(root,text = "2", padx = 40, pady = 20, command = lambda: button_click(2))
-button3 = Button(root,text = "3", padx = 40, pady = 20, command = lambda: button_click(3))
-button4 = Button(root,text = "4", padx = 40, pady = 20, command = lambda: button_click(4))
-button5 = Button(root,text = "5", padx = 40, pady = 20, command = lambda: button_click(5))
-button6 = Button(root,text = "6", padx = 40, pady = 20, command = lambda: button_click(6))
-button7 = Button(root,text = "7", padx = 40, pady = 20, command = lambda: button_click(7))
-button8 = Button(root,text = "8", padx = 40, pady = 20, command = lambda: button_click(8))
-button9 = Button(root,text = "9", padx = 40, pady = 20, command = lambda: button_click(9))
-button0 = Button(root,text = "0", padx = 40, pady = 20, command = lambda: button_click(0))
-button_add = Button(root,text = "+", padx = 39, pady = 20, command = button_add)
-button_equal = Button(root,text = "=", padx = 89, pady = 20, command = button_equal)
+button1 = Button(root,text = "1", padx = 40, pady = 20, command = lambda: button_click(1),bg = "black",fg = "white")
+button2 = Button(root,text = "2", padx = 40, pady = 20, command = lambda: button_click(2), bg = "black",fg = "white")
+button3 = Button(root,text = "3", padx = 40, pady = 20, command = lambda: button_click(3), bg = "black",fg = "white")
+button4 = Button(root,text = "4", padx = 40, pady = 20, command = lambda: button_click(4), bg = "black",fg = "white")
+button5 = Button(root,text = "5", padx = 40, pady = 20, command = lambda: button_click(5), bg = "black",fg = "white")
+button6 = Button(root,text = "6", padx = 40, pady = 20, command = lambda: button_click(6), bg = "black",fg = "white")
+button7 = Button(root,text = "7", padx = 40, pady = 20, command = lambda: button_click(7), bg = "black",fg = "white")
+button8 = Button(root,text = "8", padx = 40, pady = 20, command = lambda: button_click(8),bg = "black",fg = "white")
+button9 = Button(root,text = "9", padx = 40, pady = 20, command = lambda: button_click(9), bg = "black",fg = "white")
+button0 = Button(root,text = "0", padx = 40, pady = 20, command = lambda: button_click(0), bg = "black",fg = "white")
+button_add = Button(root,text = "+", padx = 39, pady = 20, command = button_add, bg = "red", fg = "white")
+button_equal = Button(root,text = "=", padx = 89, pady = 20, command = button_equal, bg = "yellow", fg = "black")
 button_clear = Button(root,text = "Clear", padx = 80, pady = 20, command = button_clear)
 
-button_subtract = Button(root,text = "-", padx = 41, pady = 20, command = button_subtract)
-button_multiply = Button(root,text = "x", padx = 40, pady = 20, command = button_multiply)
-button_divide = Button(root,text = "/", padx = 41, pady = 20, command = button_divide)
-button_power = Button(root,text = "X*", padx = 41, pady = 20, command = button_power)
-button_power2 = Button(root,text = "x2", padx = 41, pady = 20, command = button_power2)
-button_power3 = Button(root,text = "x3", padx = 41, pady = 20, command = button_power3)
+button_subtract = Button(root,text = "-", padx = 41, pady = 20, command = button_subtract, bg = "green", fg = "white")
+button_multiply = Button(root,text = "x", padx = 40, pady = 20, command = button_multiply,bg = "green", fg = "white")
+button_divide = Button(root,text = "/", padx = 41, pady = 20, command = button_divide,bg = "green", fg = "white")
+button_power = Button(root,text = "X*", padx = 38, pady = 20, command = button_power, bg = "pink", fg = "black")
+button_power2 = Button(root,text = "x2", padx = 37, pady = 20, command = button_power2, bg = "pink", fg = "black")
+button_power3 = Button(root,text = "x3", padx = 38, pady = 20, command = button_power3, bg = "pink", fg = "black")
 
 #Put the buttons on the screen
 
